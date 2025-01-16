@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare, MessageCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import Image from 'next/image';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -137,7 +138,7 @@ const ContactPage = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden">
-                <iframe
+                <Image
                   src="/map.png"
                   width="100%"
                   height="100%"
@@ -145,7 +146,7 @@ const ContactPage = () => {
                   allowFullScreen=""
                   loading="lazy"
                   className="rounded-2xl"
-                ></iframe>
+                ></Image>
               </div>
             </div>
 

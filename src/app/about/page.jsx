@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import { Shield, Star, Tool, Users, Award, SparkleIcon, MessageCircle } from 'lucide-react';
+import { Shield, Star, Tool, Users, SparkleIcon, MessageCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

@@ -1,4 +1,4 @@
-import { Car, Menu, X } from 'lucide-react';
+import {  Menu, X } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import React, { useState, useEffect } from 'react';
 

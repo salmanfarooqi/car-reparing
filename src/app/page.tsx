@@ -3,19 +3,20 @@
 
 'use client'
 import React, { useState, useEffect } from 'react';
-import { Car, Wrench, Shield, Settings, Clock, Phone, MapPin, Star, ChevronLeft, Award, Users, Calendar, ChevronRight, Camera, ArrowRight, MessageCircle } from 'lucide-react';
+import { Car, Wrench, Shield, Settings,  Star, ChevronLeft, ChevronRight, Camera, ArrowRight, MessageCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer'
 import { useRouter } from 'next/navigation';
-import Head from 'next/head';
+
 
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentReview, setCurrentReview] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const [activeTab, setActiveTab] = useState('vision');
+
   const router=useRouter()
+  console.log("is",isVisible)
 
 
   const reviews = [
@@ -150,7 +151,7 @@ const HomePage = () => {
                   About Dada Auto
                 </h2>
                 <p className="text-gray-300 text-lg leading-relaxed">
-                  With over 15 years of excellence, we've established ourselves as Nottingham's premier auto body repair specialists. Our commitment to quality and innovation drives everything we do.
+                  With over 15 years of excellence, we have established ourselves as Nottinghams premier auto body repair specialists. Our commitment to quality and innovation drives everything we do.
                 </p>
               </div>
 
@@ -283,7 +284,7 @@ const HomePage = () => {
                           <p className="text-white text-sm text-right mt-1">{review.date}</p>
                         </div>
                       </div>
-                      <p className="text-base text-white italic">"{review.text}"</p>
+                      <p className="text-base text-white italic">{review.text}</p>
                       <div className="mt-6 pt-6 border-t border-gray-100">
                         <div className="flex items-center justify-between text-sm text-gray-500">
                           <span>Verified Customer</span>

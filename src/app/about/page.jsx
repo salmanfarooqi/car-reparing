@@ -60,7 +60,7 @@ const AboutPage = () => {
     window.open(whatsappUrl, '_blank');
   };
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black">
       <Header />
 
       <div className="fixed bottom-8 right-8 z-50">
@@ -77,7 +77,7 @@ const AboutPage = () => {
         
      
         <div className="relative max-w-7xl mx-auto px-4 pt-16 pb-12 text-center">
-          <h1 className="text-6xl font-bold text-white mb-6">
+          <h1 className=" text-4xl sm:text-5xl text-wrap md:text-6xl font-bold text-white mb-6">
             Transforming Dreams Into
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Automotive Reality

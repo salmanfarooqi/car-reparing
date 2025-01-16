@@ -28,8 +28,8 @@ const ContactPage = () => {
     setLoading(true);
 
     try {
-      
-      await new Promise(resolve => setTimeout(resolve, 1000)); 
+
+      await new Promise(resolve => setTimeout(resolve, 1000));
       setSubmitted(true);
       setFormData({
         name: '',
@@ -74,15 +74,15 @@ const ContactPage = () => {
 
 
   const handleWhatsAppClick = () => {
-   
+
     const phoneNumber = '+447490981676'.replace(/\s+/g, '');
-   
+
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=Hi,%20I%20would%20like%20to%20know%20more%20about%20your%20services`;
     window.open(whatsappUrl, '_blank');
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black">
+    <div className="min-h-screen overflow-x-hidden bg-gradient-to-b from-gray-900 via-gray-800 to-black">
       <Header />
 
 
@@ -92,16 +92,16 @@ const ContactPage = () => {
           className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 transform hover:scale-110 flex items-center gap-2"
         >
           <MessageCircle className="h-6 w-6" />
-         
+
         </button>
       </div>
 
       <div className="relative pt-24 pb-20">
         <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]"></div>
-        
-   
-        <div className="relative max-w-7xl mx-auto px-4 pt-16 pb-12 text-center">
-          <h1 className="text-6xl font-bold text-white mb-6">
+
+
+        <div className="relative max-w-7xl mx-auto text-wrap px-4 pt-16 pb-12 text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Let's Start Your
             <span className="block bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
               Transformation Journey
@@ -133,7 +133,7 @@ const ContactPage = () => {
 
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-         
+
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden">
@@ -154,7 +154,7 @@ const ContactPage = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative bg-gray-900/50 border border-blue-600/20 p-8 rounded-2xl backdrop-blur-sm">
                 <h2 className="text-3xl font-bold text-white mb-6">Send Us a Message</h2>
-                
+
                 {submitted ? (
                   <div className="text-center py-12">
                     <div className="bg-green-500/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -189,7 +189,7 @@ const ContactPage = () => {
                         />
                       </div>
                     </div>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-gray-300 mb-2">Phone</label>

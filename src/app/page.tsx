@@ -249,13 +249,13 @@ const HomePage = () => {
               onClick={() => setCurrentReview((prev) => (prev - 1 + reviews.length) % reviews.length)}
               className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-12 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10"
             >
-              <ChevronLeft className="h-6 w-6 text-blue-600" />
+              <ChevronLeft className=" hidden md:flex h-6 w-6 text-blue-600" />
             </button>
             <button 
               onClick={() => setCurrentReview((prev) => (prev + 1) % reviews.length)}
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-12 bg-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-10"
             >
-              <ChevronRight className="h-6 w-6 text-blue-600" />
+              <ChevronRight className="hidden md:flex  h-6 w-6 text-blue-600" />
             </button>
             <div className="relative overflow-hidden">
               <div 

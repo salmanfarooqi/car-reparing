@@ -138,15 +138,13 @@ const ContactPage = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative h-full min-h-[400px] rounded-2xl overflow-hidden">
-                <Image
+                <img
                   src="/map.png"
-                  width="100%"
-                  height="100%"
+                  
                   style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
+                 
                   className="rounded-2xl"
-                ></Image>
+                ></img>
               </div>
             </div>
 

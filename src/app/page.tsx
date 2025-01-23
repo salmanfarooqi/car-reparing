@@ -24,7 +24,7 @@ const HomePage = () => {
       name: "James Wilson",
       rating: 5,
       text: "Exceptional service! The paint job on my BMW exceeded expectations. The attention to detail was remarkable.",
-      date: "March 2025",
+      date: "March 2024",
       car: "BMW M3",
       image: "/review3.jpeg"
     },
@@ -32,7 +32,7 @@ const HomePage = () => {
       name: "Sarah Parker",
       rating: 5,
       text: "Professional team and outstanding results. Best auto body shop in Nottingham! Their expertise is unmatched.",
-      date: "February 2025",
+      date: "February 2024",
       car: "Audi Q7",
       image: "/review1.jpeg"
     },
